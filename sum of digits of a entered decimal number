@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,k=1,c,q,sum=0;
+    printf("Enter the number n: \n");
+    scanf("%d",&n);
+    while(k>=1 && k<1000000)
+    {
+        c=n%(int)pow(10,k);
+        q=c/(int)pow(10,k-1);
+        sum=sum+q;
+        k++;
+
+    }
+    printf("%d",sum);
+}
